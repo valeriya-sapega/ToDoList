@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>To-Do List by Valeriya Sapega</title>
+</head>
+
+<body>
+    <main>
+
+        <section id="rules">
+            <h2>Hey there! 👋</h2>
+            <p>Ready to get started with this to-do list? Here's a quick guide on how to use it:</p>
+            <ul>
+                <li>Enter your task in the input field and simply click the <b>Add</b> button to add it to your to-do
+                    list. 📝</li>
+                <li>If you've completed a task, cross it out by clicking on it once. ✅</li>
+                <li>Changed your mind about a task? No worries! Just give it a swift double-click to remove it from the
+                    list. 🗑️</li>
+                <li>Want to declutter your list by removing all the completed tasks? Click on the Clear Completed
+                    button. 🧹</li>
+                <li>Need a fresh start? Click on the Remove All button to clear your entire to-do list in one go. 🚀
+                </li>
+            </ul>
+            <p>Stay organized!</p>
+        </section>
+
+        <div class="card">
+            <header>
+                <h1>My To-Do List</h1>
+
+                <label for="todo"></label>
+                <input type="text" name="todo" id="todo" placeholder="Enter your new task here">
+                <button onclick="addElements()" id="addButton">Add</button>
+            </header>
+
+            <div>
+                <ul id="toDoList">
+
+                </ul>
+            </div>
+
+            <div id="container">
+                <button onclick="clearCompleted()" id="clear-completed">Clear Completed</button>
+                <button onclick="removeAll(toDoList)" id="remove-all">Remove All Tasks</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
